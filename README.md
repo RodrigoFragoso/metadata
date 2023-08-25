@@ -1,6 +1,6 @@
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
-# Pipefy
+# METADATA.IO
 
 ## __Project Dependencies__
 * NVM install: https://github.com/nvm-sh/nvm || Node install: https://nodejs.org/en/download/
