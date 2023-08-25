@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^12.17.4",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^1.6.2",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "scripts": {
+    "cy:open-qa": "npx cypress open",
+    "delete:reports": "rm -rf ./cypress/results-report || true",
+    "merge:reports-test-qa": "npx mochawesome-merge ./cypress/results-report/*.json > ./cypress/results-report/result-test-qa.json; npx marge ./cypress/results-report/result-test-qa.json; npm run delete:reports",
+    "generate:mochawesome-report-ui-test-qa": "npx marge ./cypress/results-report/result-test-qa.json",
+    "move:report-html": "mv ./cypress/results-report/*.html ./cypress/results-report/api-test",
+    "smoke-test:ui:qa": "npm install; npm run delete:reports; npx cypress run --spec 'cypress/e2e/ui/**'; npm run merge:reports-test-qa"
+  },
+  "dependencies": {
+    "mochawesome-report-generator": "^6.0.1"
+  }
+}

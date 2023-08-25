@@ -1,0 +1,10 @@
+cypress.json
+node_modules
+/cypress/videos/**
+/cypress/screenshots/**
+/cypress/results-report/**
+/mochawesome-report/**
+.mp4
+debug.log*
+npm-debug.log*
+.vscode/
