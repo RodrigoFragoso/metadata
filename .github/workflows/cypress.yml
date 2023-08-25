@@ -23,3 +23,9 @@ jobs:
 
       - name: Running Cypress tests
         run: npm run smoke-test:ui:qa
+
+      - name: Save reports as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-reports
+          path: mochawesome-report

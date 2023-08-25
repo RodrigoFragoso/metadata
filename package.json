@@ -2,8 +2,6 @@
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
     "cypress": "^12.17.4",
-    "cypress-file-upload": "^5.0.8",
-    "cypress-xpath": "^1.6.2",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-cypress": "^2.11.3",
